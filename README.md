@@ -16,6 +16,7 @@ It is the special tokenizer downloaded from https://huggingface.co/alirezamsh/sm
 cd STAT7008-kunyu
 python finetune/finetune_smallM2M.py
 ```
+
 4. Ouputs:
 models dir = './models/smallM2M100/'
 checkpoints dir = './checkpts/checkpoint-{epochs number}'
@@ -42,6 +43,7 @@ Change the finetune/ft_indobert.yaml for training setting
 python finetune/finetune_indobert.py
 ```
 get the loss curve saved as loss_indobert.png
+
 3. Outputs
 checkpoints dir = './checkpts/indobert_model.pth'
 4. evaluation
