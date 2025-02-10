@@ -8,18 +8,18 @@ git clone https://github.com/IndoNLP/nusax.git
 
 ## Model: SMaLL-100
 1. Training config:
-Change the finetune/utils/train_config.py for training setting
+Change the finetune/utils/train_config.py for training setting     
 2. Tokenizer:
-It is the special tokenizer downloaded from https://huggingface.co/alirezamsh/small100/blob/main/tokenization_small100.py
+It is the special tokenizer downloaded from https://huggingface.co/alirezamsh/small100/blob/main/tokenization_small100.py     
 3. Run finetune codes:
 ```
 cd STAT7008-kunyu
-python finetune/finetune_smallM2M.py
-```
-4. Ouputs:
+python finetune/finetune_smallM2M.py  
+```     
+4. Ouputs:     
 models dir = './models/smallM2M100/'
 checkpoints dir = './checkpts/checkpoint-{epochs number}'
-5. evaluation:
+5. evaluation:     
 run
 ```python translate_m2m.py```
 
@@ -41,9 +41,9 @@ Change the finetune/ft_indobert.yaml for training setting
 ```
 python finetune/finetune_indobert.py
 ```
-get the loss curve saved as loss_indobert.png
+get the loss curve saved as loss_indobert.png    
 3. Outputs
-checkpoints dir = './checkpts/indobert_model.pth'
+checkpoints dir = './checkpts/indobert_model.pth'    
 4. evaluation
 run
 ```python eval_indobert.py``` 
