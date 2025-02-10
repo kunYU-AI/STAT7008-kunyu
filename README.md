@@ -1,11 +1,7 @@
 # Kunyu part: SOTA NLP models (SMaLL-100, VADER, IndoBERT)
 
 ## Prepare
-change working path under STAT7008_kunyu_SOTA folder
-```
-cd STAT7008_kunyu_SOTA
-```
-Since it is seperate folder, we should input dataset first：
+We should input dataset first：
 ```
 git clone https://github.com/IndoNLP/nusax.git
 ```
@@ -17,7 +13,7 @@ Change the finetune/utils/train_config.py for training setting
 It is the special tokenizer downloaded from https://huggingface.co/alirezamsh/small100/blob/main/tokenization_small100.py
 3. Run finetune codes:
 ```
-cd STAT7008_kunyu_SOTA
+cd STAT7008-kunyu
 python finetune/finetune_smallM2M.py
 ```
 4. Ouputs:
@@ -34,7 +30,6 @@ git clone https://github.com/fajri91/InSet.git
 ```
 then run 
 ```
-cd STAT7008_kunyu_SOTA
 python vader.py
 ```
 output a vader confussion matrix png named as eval_vader.png
@@ -44,7 +39,6 @@ output a vader confussion matrix png named as eval_vader.png
 Change the finetune/ft_indobert.yaml for training setting
 2. Run finetune codes:
 ```
-cd STAT7008_kunyu_SOTA
 python finetune/finetune_indobert.py
 ```
 get the loss curve saved as loss_indobert.png
