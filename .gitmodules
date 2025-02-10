@@ -1,6 +1,3 @@
-[submodule ".\\nusax"]
-	path = nusax
-	url = https://github.com/IndoNLP/nusax
 [submodule "nusax"]
 	path = nusax
 	url = https://github.com/IndoNLP/nusax.git
